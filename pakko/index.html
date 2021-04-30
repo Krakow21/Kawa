@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+    
 </head>
 <body>
     <header class="nav">
@@ -18,18 +19,24 @@
                 <div class="nav-logo">
                     <img src="./img/logo.svg" alt="Логотип">
                 </div>
-                <ul class="nav-menu">
-                    <li class="nav-menu__item"><a href="#" class="nav-item">Tarifs</a></li>
-                    <li class="nav-menu__item"><a href="#" class="nav-item">App iOS</a></li>
-                    <li class="nav-menu__item"><a href="#" class="nav-item">Me connecter</a></li>
-                    <li class="nav-menu__item">
-                        <a href="#" class="nav-item">
-                            <button class="nav-item__btn btn">
-                                S'inscrire
-                            </button>
-                        </a>
-                    </li>
-                </ul>
+                <!-- <div class="menu"> -->
+                    <ul class="nav-menu">
+                        <li class="nav-menu__item"><a href="#" class="nav-item">Tarifs</a></li>
+                        <li class="nav-menu__item"><a href="#" class="nav-item">App iOS</a></li>
+                        <li class="nav-menu__item"><a href="#" class="nav-item">Me connecter</a></li>
+                        <li class="nav-menu__item">
+                            <a href="#" class="nav-item">
+                                <button class="nav-item__btn btn">
+                                    S'inscrire
+                                </button>
+                            </a>
+                        </li>
+                    
+                    </ul>
+                <!-- </div> -->
+                <a href="#" class="menu-btn">
+                    <span></span>
+                </a>
             </nav>
         </div>
     </header>
@@ -258,5 +265,23 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $menu = $('.nav-menu');
+
+            $('.menu-btn').click(function(){
+                $(this).toggleClass('menu-btn_active');
+            })
+            $('.menu-btn').click(function(){
+                $('.nav-menu').toggleClass('nav-menu__active');
+            })
+        });
+        jQuery('a').on('click', function (e) {
+            e.preventDefault();
+        });
+    </script>
 </body>
 </html>
