@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap');
+@font-face 
+    font-family: bebas
+    src: url('../fonts/BebasNeueBold.ttf')
+body
+    box-sizing: border-box
+    font-family: Montserrat
+    overflow-x: hidden
+a
+    text-decoration: none
+    outline: none
+h1,h2,h3,h4,h5,h6
+    font-family: bebas
+// .container
+    // padding: 0
+ul
+    padding: 0
+    margin: 0
+li
+    padding: 0
+    margin: 0
+    &::marker
+        display: none
+p
+    margin: 0
+.burger
+    z-index: 100
+    display: none
+    padding: 5px
+    width: 50px
+    height: 50px
+    &_active
+        border: 3px solid white
+        display: flex
+        align-items: center
+        justify-content: center
+        a
+            span
+                height: 0 !important
+                &:before
+                    transform: rotate(45deg) !important
+                &:after
+                    transform: rotate(-45deg) !important
+    a
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        span
+            display: block
+            width: 33px
+            height: 4px
+            background-color: #fff
+            position: relative
+            &::after, &::before
+                content: ''
+                position: absolute
+                display: block
+                width: 33px
+                height: 4px
+                background-color: #fff
+                transition: 0.1s
+            &::after
+                transform: translateY(-10px)
+            &::before
+                transform: translateY(10px)
+    &-block
+        display: none
+        position: fixed
+        width: 100%
+        height: 100%
+        bottom: 0
+        left: 0
+        top: 0
+        z-index: 90
+        background-image: url('/img/navbar/MaskGroup.jpg')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        &_active
+            display: block
+    &-item
+        padding: 10px 0
+        display: flex
+        justify-content: space-between
+        a
+            font-size: 36px
+            font-weight: bold
+            color: #989898 
+            img
+                width: 40px
+                height: 40px
+        &::marker
+            display: none
+    &-btn
+        border: 1px solid #fff
+        padding: 20px
+        color: #fff
+    &-list
+        height: auto
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding-top: 70px
+        margin-bottom: 30px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 1px
+            background: #fff
+            height: 88%
+            left: -15px
+.header
+    z-index: 100
+    padding: 20px 0
+    background-image: url('../img/navbar/bg.png')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    height: 80px
+    &-brand
+        z-index: 100
+    &-btn
+        color: #fff
+        border: 2px solid #fff
+        margin-left: 27px
+    &-link
+        color: #fff
+        text-decoration: none
+.hero
+    // background-image: url('/img/hero/hero-bg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    color: white
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        z-index: -20
+        height: 100%
+        width: 100%
+        background-image: url('../img/hero/hero-bg.png')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+    &-title
+        font-size: 230px
+        position: relative
+        margin-top: 100px
+        line-height: 0.8
+        margin-bottom: 50px
+        max-width: 493px
+        p
+            font-size: 16px
+            position: absolute
+            top: 30px
+            right: 0
+            // margin-top: 30px
+            max-width: 187px
+            line-height: 140%
+            // margin-top: 10px
+            font-family: Montserrat
+            &::before
+                content: ''
+                position: absolute
+                width: 1px
+                height: 162px
+                background: #fff
+                left: -20px
+                top: -14px
+    &-btn
+        margin-top: 50px
+        margin-bottom: 40px
+        color: #000
+        background: #fff
+        padding: 6px 43px
+        border: 2px solid #000
+        font-size: 16px
+        font-weight: bold
+        filter: drop-shadow(0 4px 14px #807878)
+    &-mouse
+        margin-bottom: 100px
+    &-card
+        &__text
+            font-size: 14px
+            max-width: 243px
+        &__img
+            margin-bottom: 10px
+.ch
+    position: relative
+    background-image: url('../img/changes/bg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    height: 1319px
+    &-bg
+        display: flex
+        align-items: center
+        justify-content: center
+        overflow: hidden
+    &-title
+        // position: absolute
+        // top: 200px
+        margin-top: 200px
+        h2
+            font-size: 96px
+            line-height: 1.4
+        p
+            font-size: 48px
+            font-weight: bold
+            position: relative
+            font-family: bebas
+            &::before
+                content: ''
+                position: absolute
+                width: 98px
+                height: 5px
+                background: #000
+                bottom: -40px
+                left: 0
+    &-img
+        margin-top: 40px
+    &-card
+        background: #D1D0D0
+        padding: 10px 15px
+        filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35))
+        &__title
+            font-size: 24px
+        &__text
+            font-size: 14px
+        &__img
+            margin-top: 40px
+        &__block
+            &1
+                top: 267px
+                position: absolute
+            &2
+                top: 215px
+                position: absolute
+            &3
+                top: 120px
+                position: absolute
+            &4
+                top: 25px
+                position: absolute
+            &5
+                top: -90px
+                position: absolute
+    &-btn
+        margin-top: 50px
+        margin-bottom: 40px
+        color: #000
+        background: #fff
+        padding: 6px 43px
+        border: 2px solid #000
+        font-size: 16px
+        font-weight: bold
+        position: absolute
+        bottom: 100px
+@media (max-width: 1200px)
+    .ch
+        &-card
+            padding: 5px 5px
+@media ( max-width: 992px )
+    .ch
+        &-title
+            margin-bottom: 50px
+        &-card
+            margin: 15px 0
+            &__block1,&__block2,&__block3,&__block4,&__block5
+                position: relative
+                top: 0
+            &::after
+                content: url('/img/changes/Group 6937.svg')
+                position: absolute
+                bottom: -37px
+            &__final
+                &::after
+                    content: url('/img/changes/Group 6938.svg')
+                    position: absolute
+                    bottom: -37px
+        &-img
+            display: none
+@media (max-width: 768px)
+    .header
+        background: #000
+        height: 70px
+        padding: 10px 20px
+        &-block
+            display: none  !important
+    .burger
+        display: flex
+    .hero
+        &::after
+            background-image: url('/img/hero/bg-mobile.jpg')
+        &-mouse
+            display: none
+        &-title
+            font-size: 140px
+            margin-bottom: 200px
+            p
+                display: block
+                position: relative
+                max-width: 100%
+                &::before
+                    height: 100%
+                    top: 0
+    .ch
+        background: #fff
+        &-title
+            margin-top: 50px
+            font-size: 64px
+@media ( max-width: 576px )
+    .hero
+        &-cards
+            margin-left: 20px
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                height: 100%
+                background: #D1D0D0
+                width: 1px
+                left: -8px
+    
