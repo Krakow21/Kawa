@@ -539,9 +539,13 @@ p
                     top: 0
     .ch
         background: #fff
+        height: auto
         &-title
             margin-top: 50px
             font-size: 64px
+        &-btn
+            position: unset
+            margin-bottom: 0
     .promo
         overflow: hidden
         &::before
@@ -553,12 +557,23 @@ p
             bottom: 0
             height: 100%
             width: 100%
-            top: 14%
+            top: 10%
         &-bg
             display: none
         &-content
             &::before
                 display: none
+        &-title
+            font-size: 56px
+        &-subtitle
+            &__1
+                font-size: 18px
+            &__2
+                font-size: 24px
+            &__3
+                font-size: 18px
+        &-arrow
+            margin-bottom: 50px
     .cards
         &-1
             .cards-title
@@ -584,38 +599,58 @@ p
                 top: 140px
         &-3
             .cards-title
-                margin: auto
-                width: 100%
-                text-align: center
-                padding: 110px 0 40px 0
+                // margin: auto
+                max-width: 100%
+                // text-align: center
+                padding: 0
+                margin: 0 0 30px 0
+
                 &::before
-                    top: 0
-                    left: 37%
+                    display: block
+                    position: unset
+                    text-align: center
+                    margin-bottom: 50px
+                span
+                    display: block
         &-4
             .cards-title
-                margin: auto
-                width: 100%
-                text-align: center
-                padding: 110px 0 40px 0
+                max-width: 100%
+                padding: 0
+                margin: 0 0 30px 0
                 &::before
-                    top: 0
-                    left: 40%
+                    display: block
+                    position: unset
+                    text-align: center
+                    margin-bottom: 50px
         &-5
             .cards-title
-                margin: auto
-                width: 100%
-                text-align: center
-                padding: 110px 0 40px 0
+                max-width: 100%
+                padding: 0
+                margin: 0 0 30px 0
                 &::before
-                    top: 0
-                    left: 40%
+                    display: block
+                    position: unset
+                    text-align: center
+                    margin-bottom: 50px
             .tag
                 &::before
                     left: 12px
+    .card
+        filter: unset
+        border: 3px solid #000
+        margin: 10px 0
+        &-btn
+            background: #FFC856
+            color: #000
+            border-top: 3px solid #000
+            // border-bottom: 3px solid #000
     .tag
         &::before
             left: 0
 @media ( max-width: 576px )
+    .cards-2
+        .cards-title
+            top: 120px
     .ch
         &-title
             h2
