@@ -289,7 +289,15 @@ p
 
 .promo
     position: relative
-    display: none
+    &-bg
+        position: absolute
+        bottom: 0
+        top: 18%
+        z-index: 1
+        width: 26%
+        img
+            height: 100%
+            width: 100%
     &-content
         position: relative
         overflow: hidden
@@ -297,13 +305,14 @@ p
             z-index: 1
             content: ''
             position: absolute
-            background-image: url('../img/promo/bg.png')
-            background-repeat: repeat-y
-            background-size: contain
+            background: #1D1D1D
+            // background-image: url('../img/promo/bg.png')
+            // background-repeat: repeat-y
+            // background-size: contain
             width: 24%
             height: 100%
             left: 0
-            top: 14%
+            top: 13.39%
     &-arrow
         margin-top: 50px
         margin-bottom: 100px
@@ -363,10 +372,21 @@ p
         max-width: 285px
         position: relative
         z-index: 2
+    &-ord
+        &__1,&__2,&__3
+            order: unset
+
 .cards-1
     margin-bottom: 25px
     h5
         font-size: 48px
+        span
+            font-size: 18px
+            font-family: Montserrat
+    .cards-title
+        margin-top: 50px
+        &__mob
+            display: none
 .cards-2
     padding-top: 25px
     background-color: #838383
@@ -375,6 +395,8 @@ p
         margin-bottom: 25px
         &-soon
             height: 93%
+            background: #B1B1B1
+            color: #D1D1D1
     &__img
         position: absolute
         top: -30px
@@ -385,8 +407,23 @@ p
         position: absolute
         max-width: 285px
         top: 40%
+    &::before
+        content: ''
+        position: absolute
+        right: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: #838383
 .cards-3
     margin: 25px 0
+    .cards-title
+        position: relative
+        margin-top: 50px
+        &::before
+            top: -100px
+            position: absolute
+            content: url('../img/promo/plus.svg')
 .tag
     position: relative
     &::before
@@ -402,17 +439,42 @@ p
         background: #E41E0C
         border-radius: 40px
 .cards-4
-    margin: 25px 0
+    margin: 50px 0
+    .cards-title
+        position: relative
+        margin-top: 50px
+        &::before
+            top: -100px
+            position: absolute
+            content: url('../img/promo/plus.svg')
 .cards-5
     margin: 25px 0
     .tag
         &::before
             content: 'Профессионалам'
             left: 0
+    .cards-title
+        position: relative
+        margin-top: 50px
+        &::before
+            top: -100px
+            position: absolute
+            content: url('../img/promo/plus.svg')
+@media (max-width: 1400px)
+    .promo
+        &-content
+            &::before
+                top: 13.47%
 @media (max-width: 1200px)
     .ch
         &-card
             padding: 5px 5px
+    .promo
+        &-bg
+            top: 20%
+        &-content
+            &::before
+                top: 16.02%
 @media ( max-width: 992px )
     .ch
         &-title
@@ -433,6 +495,21 @@ p
                     bottom: -37px
         &-img
             display: none
+    .card
+        &-soon
+            display: none
+    .promo
+        &-content
+            &::before
+                width: 33%
+    .cards
+        &-ord
+            &__1
+                order: 1
+            &__2
+                order: 2
+            &__3
+                order: 3
 @media (max-width: 768px)
     .header
         background: #000
@@ -447,6 +524,7 @@ p
     .hero
         &::after
             background-image: url('../img/hero/bg-mobile.jpg')
+            
         &-mouse
             display: none
         &-title
@@ -464,7 +542,84 @@ p
         &-title
             margin-top: 50px
             font-size: 64px
+    .promo
+        overflow: hidden
+        &::before
+            content: ''
+            background-image: url('../img/promo/bg-mobile.jpg')
+            background-repeat: no-repeat
+            background-size: cover
+            position: absolute
+            bottom: 0
+            height: 100%
+            width: 100%
+            top: 14%
+        &-bg
+            display: none
+        &-content
+            &::before
+                display: none
+    .cards
+        &-1
+            .cards-title
+                display: none
+                &__mob
+                    display: block
+                    color: #fff
+                    margin-bottom: 30px
+        &-2
+            background: none
+            h5
+                max-width: 80%
+                top: 0
+            &::before
+                background: none
+            &__img
+                position: relative
+                display: flex
+                justify-content: center
+                margin-top: 60px
+                margin-bottom: 150px
+            .cards-title
+                top: 140px
+        &-3
+            .cards-title
+                margin: auto
+                width: 100%
+                text-align: center
+                padding: 110px 0 40px 0
+                &::before
+                    top: 0
+                    left: 37%
+        &-4
+            .cards-title
+                margin: auto
+                width: 100%
+                text-align: center
+                padding: 110px 0 40px 0
+                &::before
+                    top: 0
+                    left: 40%
+        &-5
+            .cards-title
+                margin: auto
+                width: 100%
+                text-align: center
+                padding: 110px 0 40px 0
+                &::before
+                    top: 0
+                    left: 40%
+            .tag
+                &::before
+                    left: 12px
+    .tag
+        &::before
+            left: 0
 @media ( max-width: 576px )
+    .ch
+        &-title
+            h2
+                font-size: 64px
     .hero
         &-cards
             margin-left: 20px
@@ -476,4 +631,3 @@ p
                 background: #D1D0D0
                 width: 1px
                 left: -8px
-    
