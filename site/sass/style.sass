@@ -329,6 +329,80 @@ p
             font-family: Montserrat
             font-size: 18px
             margin-bottom: 110px
+    &-color
+        color: #F1493D
+        font-size: 48px
+        line-height: 1.4
+    &-footer
+        background-image: url('../img/promo-footer/bg.jpg')
+        background-repeat: no-repeat
+        background-size: cover
+        padding-top: 68px
+        overflow: hidden
+        &__btn
+            padding: 8px 45px
+            border: 2px solid #000
+            border-radius: 0
+            filter: drop-shadow(0 4px 14px #807878)
+            margin-bottom: 300px
+            background-color: #fff
+        &__content
+            margin-top: 50px
+            position: relative
+        &__header
+            margin-bottom: 200px
+        &__text
+            color: #fff
+            h6
+                margin-bottom: 50px
+                font-family: Montserrat
+                font-size: 18px
+                line-height: 140%
+            h2
+                font-size: 96px
+            h3
+                font-size: 48px
+                margin-bottom: 50px
+                line-height: 1.2
+                span
+                    color: #F1493D
+                    font-size: 48px
+                    margin-bottom: 50px
+                    line-height: 1.2
+            h4
+                font-size: 24px
+            span
+                font-size: 18px
+                line-height: 140%
+                margin-bottom: 30px
+        &__img
+            width: 100%
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+        &__btn
+            margin-top: 30px
+        &__title
+            font-size: 48px
+            line-height: 1.4
+            font-family: bebas
+            margin-left: 100px
+            color: #fff
+            span
+                font-size: 48px !important
+                line-height: 1.4
+        &__image
+            img
+                width: 58%
+                position: absolute
+                bottom: 0
+                right: 0
+            &::before
+                content: url('../img/promo-footer/Linked Path Group.png')
+                position: absolute             
+                right: -8%
+                bottom: 0
 .card
     padding-top: 10px
     border: 2px solid #000
@@ -460,11 +534,434 @@ p
             top: -100px
             position: absolute
             content: url('../img/promo/plus.svg')
+.mm
+    padding-top: 160px
+    position: relative
+    background-image: url('../img/mm.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    &-block
+        text-align: center
+        padding: 40px
+        border: 2px solid #000
+        position: absolute
+        width: 83%
+        margin: auto
+        top: -10%
+        background: #fff
+        h2
+            font-size: 96px
+        span
+            font-size: 18px
+    &-arrow
+        margin-bottom: 100px
+    &-title
+        h2
+            line-height: 1.2
+            font-size: 96px
+        h4
+            font-family: Montserrat
+            font-size: 24px
+            font-weight: bold
+            margin-bottom: 75px
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                width: 98px
+                height: 5px
+                background-color: #000
+                bottom: -20px
+                left: 0
+        span
+            font-weight: bold
+            font-size: 20px
+            margin-bottom: 20px
+            display: block
+    &-card
+        padding: 20px 30px
+        border: 2px solid #000
+        max-width: 50%
+        background: #fff
+        &s
+            display: flex
+            margin-bottom: 50px
+        &2
+            color: #fff
+            border-top: 2px solid #000
+            border-right: 2px solid #000
+            border-bottom: 2px solid #000
+            background: #253C53
+            max-width: 50%
+        &__title
+            font-size: 24px
+            padding-top: 20px
+            padding-left: 20px
+            display: block
+            margin-bottom: 15px
+            padding-right: 50px
+        &__text
+            padding-left: 20px
+            display: block
+        &__btn
+            width: 100%
+            background-color: #000
+            color: #fff
+            padding: 15px 0
+            border: none
+            margin-top: 10px
+            font-weight: bold
+    &-cart
+        background: linear-gradient(to top, #fff, #E3E3E3)
+        &__head
+            padding: 10px 30px
+            background-color: #000
+            color: #fff
+            position: relative
+            h5
+                margin: 0
+                font-size: 36px
+            &::before
+                content: ''
+                position: absolute
+            &::after
+                content: ''
+                position: absolute
+        &__text
+            padding: 20px 30px
+            span
+                font-size: 18px
+                max-width: 405px
+                display: block
+.title
+    font-size: 96px
+.soc
+    padding-top: 200px
+    background-image: url('../img/soc.png')
+    background-repeat: no-repeat
+    background-position: 37%
+    &-text
+    &-title
+        line-height: 1.2
+    h4
+        font-size: 48px
+        line-height: 1.2
+        margin-bottom: 10px
+        
+    &-text1
+        font-size: 24px
+        font-weight: bold
+        line-height: 140%
+        position: relative
+        margin-bottom: 75px
+        &::after
+            content: ''
+            position: absolute
+            width: 98px
+            height: 5px
+            background-color: #000
+            bottom: -20px
+            left: 0
+    &-text2
+        font-size: 20px
+        font-weight: bold
+        line-height: 140%
+        margin-bottom: 30px
+        display: block
+
+    &-subtitle
+        font-size: 48px
+        line-height: 1.4
+    &-black
+        padding: 20px 40px 40px 40px
+        color: #fff
+        margin-bottom: 50px
+        background-color: #000
+        position: relative
+        &::after
+           content: ''
+           position: absolute 
+           background: #000
+           height: 100%
+           width: 14%
+           top: 0
+           right: -3.9%
+        &__title
+            font-size: 20px
+            font-weight: bold
+            margin-bottom: 20px
+        span
+            font-size: 14px
+            line-height: 140%
+    button
+        margin-top: 0
+        margin-bottom: 154px
+.carousel-indicators
+    bottom: -28%
+    button
+        background-color: #253C53 !important
+.help
+    background-image: url('../img/help.jpg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    &-subtitle
+        font-size: 20px
+        position: relative
+        margin-bottom: 75px
+        display: block
+        &::after
+            content: ''
+            position: absolute
+            width: 98px
+            height: 5px
+            background-color: #000
+            bottom: -20px
+            left: 0
+    &-card
+        background: #fff
+        border: 1px solid #000
+        margin-bottom: 30px
+        display: block
+        filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35))
+        span      
+            padding: 20px
+            display: block    
+            max-width: 360px
+        &__color
+            color: #fff
+            background-color: #253C53
+        &__border
+            border: 4px solid #000
+            height: 90px
+    &-btn
+        margin: 0
+        width: 100%
+        background: #000
+        color: #fff
+        padding: 18px 0
+        margin-bottom: 70px
+        filter: unset
+    &-footer
+        font-size: 24px
+        font-weight: bold
+        max-width: 480px
+        display: block
+.cons
+    background-image: url('../img/cons-bg.jpg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    position: relative
+    margin-top: 200px
+    &-subtitle
+        position: relative
+        display: block
+        font-size: 48px
+        margin-bottom: 10px
+    &-text1
+        font-size: 18px
+        line-height: 1.2
+        display: block
+        font-weight: bold
+        margin-bottom: 75px
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            width: 98px
+            height: 5px
+            background-color: #000
+            bottom: -20px
+            left: 0
+    &-text2
+        font-size: 36px
+        line-height: 1.2
+        margin-bottom: 20px
+        display: block
+        margin-top: 200px
+    &-cards
+        display: flex
+        margin-bottom: 50px
+    &-card1
+        background: #fff
+        width: 40%
+        border: 1px solid #000
+        padding: 20px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        span
+            margin-bottom: 40px
+            font-size: 18px
+        h5
+            font-size: 36px
+            line-height: 1.2
+            text-transform: uppercase
+            margin: 0
+    &-card2
+        width: 60%
+        color: #fff
+        padding: 20px
+        background: #253C53
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        button
+            padding: 10px
+            background: #000
+            color: #fff
+            width: 330px
+            border: none
+            font-weight: bold
+        span
+            max-width: 391px
+.subtitle
+    font-size: 48px
+.plat
+    margin-top: 200px
+    background-image: url('../img/plat/plat.png')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    &-cards
+        margin-bottom: 20px
+    &-card
+        display: flex
+        padding: 20px
+        filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35))
+        background: #fff
+        border: 1px solid #000
+        margin-bottom: 30px
+        &__title
+            font-weight: bold
+            font-size: 18px
+            margin-bottom: 10px
+            display: block
+        &__text
+            margin-left: 20px
+    &-subtitle
+        margin-bottom: 10px
+    &-text1
+        font-size: 18px
+        font-weight: bold
+        position: relative
+        margin-bottom: 75px
+        display: block
+        &::after
+            content: ''
+            position: absolute
+            width: 98px
+            height: 5px
+            background-color: #000
+            bottom: -20px
+            left: 0
+    ul
+        li
+            list-style-image: url('../img/plat/Rectangle 2038.jpg')
+    &-footer
+        background: #253C53
+        padding: 10px
+        color: #fff
+        &__list
+            padding: 20px
+        &__item
+            font-size: 14px
+            margin: 5px 0
+        &__card
+            padding: 10px
+            background: #fff
+            color: #000
+        &__title
+            font-size: 18px
+            margin-bottom: 10px
+            padding: 0 10px
+            font-weight: bold
+        &__text
+            margin-bottom: 10px
+            padding: 0 10px
+            font-size: 14px
+        &__btn
+            width: 100%
+            background: #000
+            color:#fff
+            padding: 10px
+            font-size: 14px
+            border: none
+.cr
+    margin-top: 100px
+    background-image: url('../img/cr/bg.png')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    &-card
+        padding: 10px
+        background: #fff
+        margin-bottom: 20px
+        border: 1px solid #000
+        font-size: 14px
+        filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35))
+        span
+            display: block
+            max-width: 243px
+        &__title
+            span
+                max-width: 290px
+                display: block
+                font-weight: bold
+                font-size: 18px
+    blockquote
+        display: block
+        position: relative
+        &::after
+            right: 15%
+            bottom: 0
+            position: absolute
+            content: url('../img/cr/“-1.svg')
+        &::before
+            left: -8%
+            top: 0
+            position: absolute
+            content: url('../img/cr/“.svg')
+    &-text2
+        font-size: 20px
+        line-height: 140%
+        font-weight: bold
+    &-footer
+        padding: 50px
+        background: #1C1C22
+        color: #fff
+        text-align: center
+        &__title
+            font-size: 36px
+            line-height: 1.4
+        &__subtitle
+            font-size: 18px
+            line-height: 140%
+            display: block
+            margin-bottom: 40px
+            font-weight: bold
+        &__text1
+            display: block
+            margin-bottom: 10px
+            font-size: 18px
+        &__text2
+            font-weight: bold
+            font-size: 20px
+            line-height: 140%
+    &-img
+        img
+            width: 100%
 @media (max-width: 1400px)
     .promo
         &-content
             &::before
                 top: 13.47%
+        &-footer
+            &__image
+                &::before
+                    right: -15%
 @media (max-width: 1200px)
     .ch
         &-card
@@ -475,6 +972,13 @@ p
         &-content
             &::before
                 top: 16.02%
+        &-footer
+            &__image
+                &::before
+                    bottom: -18%
+                    right: -23%
+    .carousel-indicators
+        bottom: -32%
 @media ( max-width: 992px )
     .ch
         &-title
@@ -502,6 +1006,35 @@ p
         &-content
             &::before
                 width: 33%
+        &-footer
+            &__image
+                &::before
+                    display: none
+                img
+                    left: 25%
+                    bottom: 37.4%
+                    width: 50%
+            &__img
+                margin-bottom: 50px
+            &__title
+                margin: 0
+                text-align: center
+            &__header
+                margin-bottom: 100px
+            &__text
+                margin-bottom: 200px
+                h2
+                    font-size: 56px
+                h3
+                    margin-bottom: 500px
+                    font-size: 24px
+                    span
+                        font-size: 24px
+            &__btn
+                position: absolute
+                margin: 0
+                bottom: 33%
+                left: 38%
     .cards
         &-ord
             &__1
@@ -510,7 +1043,48 @@ p
                 order: 2
             &__3
                 order: 3
+    .mm
+        &-block
+            h2
+                font-size: 48px
+            span
+                font-size: 18px
+    .soc
+        background-position: 75%
+        &-phone
+            display: flex
+            align-items: center
+            justify-content: center
+    .carousel-indicators
+        bottom: -15%
 @media (max-width: 768px)
+    .plat
+        margin-top: 50px
+        background-image: none
+    .cons
+        background-position: 68%
+        &-cards
+            flex-direction: column
+        &-card1,&-card2
+            width: 100%
+        &-card1
+            background-color: #fff
+            span
+                margin-bottom: 10px
+        &-card2
+            padding: 0
+            span
+                display: block
+                padding: 10px 15px
+            button
+                width: 100% 
+        &-img
+            img
+                width: 100%
+        .hero-btn
+            width: 100%
+        &-text2
+            margin-top: 55px
     .header
         background: #000
         height: 70px
@@ -574,6 +1148,14 @@ p
                 font-size: 18px
         &-arrow
             margin-bottom: 50px
+        &-footer
+            &__image
+                img
+                    width: 63%
+                    left: 15%
+            &__btn
+                left: 27%
+
     .cards
         &-1
             .cards-title
@@ -634,6 +1216,9 @@ p
                     margin-bottom: 50px
             .tag
                 &::before
+                   top: 0 
+            .tag
+                &::before
                     left: 12px
     .card
         filter: unset
@@ -642,11 +1227,76 @@ p
         &-btn
             background: #FFC856
             color: #000
-            border-top: 3px solid #000
-            // border-bottom: 3px solid #000
     .tag
         &::before
             left: 0
+    .mm
+        .container
+            overflow: hidden
+        h2
+            font-size: 56px
+        h4
+            font-size: 18px
+        &-cards
+            flex-direction: column
+        &-card, &-card2
+            max-width: 100%
+        &-card
+            margin-bottom: 20px
+        &-cart
+            &__head
+                position: relative
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    background: black
+                    top: 0
+                    left: -100%
+                &::after
+                    content: ''
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    background: black
+                    top: 0
+                    left: 100%
+    .soc
+        padding-top: 50px
+        position: relative
+        &-text
+            overflow: hidden
+        &-content
+            position: relative
+        &-text2
+            position: absolute
+            bottom: 8%
+        button
+            position: absolute
+            bottom: 5%
+            margin-bottom: 0
+            width: 100%
+        &-phone
+            img
+                width: 70%
+                margin-bottom: 250px
+    .slider
+        width: 100%
+        margin-bottom: 250px
+        display: flex
+        align-items: center
+        justify-content: center
+        .carousel
+            width: 50%
+            &-indicators
+                display: none
+    .help
+        &-card
+            &__border
+                height: auto
+                margin-bottom: 0
+                border-bottom: 0
 @media ( max-width: 576px )
     .cards-2
         .cards-title
@@ -666,3 +1316,13 @@ p
                 background: #D1D0D0
                 width: 1px
                 left: -8px
+    .title
+        font-size: 56px
+    .soc
+        &-text
+            h4
+                font-size: 34px
+        &-text1
+            font-size: 18px
+        &-subtitle
+            font-size: 24px
