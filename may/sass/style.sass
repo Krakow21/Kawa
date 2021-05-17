@@ -1,0 +1,895 @@
+@import '_slick-theme.scss'
+@font-face
+    font-family: An
+    src: url('../fonts/4279.ttf')
+@font-face
+    font-family: Gil
+    src: url('../fonts/Gilroy-Light.ttf')
+$pink: #FFE0EF
+$purp: #891C7E
+$bl: #261B06
+$purpD: #A9336C
+.order-1
+    order: 1
+a
+    color: unset
+    text-decoration: none
+body
+    box-sizing: border-box
+    font-family: Gil
+.btn
+    border-radius: 20px
+    font-size: 18px
+    border: 1px solid#A9336C
+    background: #FFE0EF
+    color: #891C7E
+    font-family: Gil
+    padding: 14px 64px
+    filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.15))
+h1,h2,h3,h4,h5,h6
+    font-family: An
+    font-size: 46px
+    margin: 0
+    color: $purp
+span
+    font-size: 18px
+    color: $purp
+ul
+    padding: 0
+    margin: 0
+    list-style-type: none
+    li
+        padding: 0
+        margin: 0
+.next
+    position: absolute
+    top: 27%
+    right: -7%
+.prev
+    left: -7%
+    position: absolute
+    top: 27%
+.nav
+    padding-bottom: 90px
+    &-content
+        display: flex
+        justify-content: space-between
+    &-left,&-right
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-logo
+        padding-right: 10px
+    &-list
+        display: flex
+        justify-content: space-between
+    &-item
+        font-size: 18px
+        font-family: An
+        a
+            color: $purp
+            padding: 0 10px
+    &-btn
+        padding: 10px 13px
+        font-size: 18px
+        border-radius: 40px
+        background: unset
+        margin: 0 44px 0 30px
+    &-tel
+        display: flex
+        align-items: center
+        a
+            padding-left: 10px
+            font-size: 20px
+.hero
+    padding-bottom: 156px
+    background-image: url('../img/hero/bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    overflow: hidden
+    &::before
+        content: ''
+        position: absolute
+        background-image: url('../img/hero/border.png')
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center
+        top: 0
+        left: 0
+        // width: 139%
+        // height: 147%
+        // top: 14%
+        // left: -20%
+    &-content
+        position: relative
+        z-index: 2
+    &-text
+        text-align: center
+    &-title
+        font-size: 96px
+        margin-bottom: 30px
+        margin-right: 50px
+    &-subtitle
+        margin-bottom: 10px
+    &-subtitle2
+        font-size: 24px
+    &-cards
+        margin-top: 80px
+        margin-bottom: 50px
+    &-card
+        &__img
+            margin-bottom: 10px
+    &-footer
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__title
+            font-size: 30px
+            font-family: Gil
+            margin-bottom: 30px
+        &__btn
+            margin-bottom: 30px
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+.dear
+    background-image: url('../img/dear/bg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    padding-top: 42px
+    &-img
+        margin-top: 150px
+        margin-bottom: 100px
+    &-title
+        font-size: 72px
+    &-subtitle
+        font-size: 36px
+        margin-bottom: 50px
+    &-text
+        position: relative
+        &1
+            font-size: 30px
+            max-width: 500px
+            line-height: 1.4
+            color: $bl
+            margin-bottom: 20px
+        &2
+            font-size: 18px
+            max-width: 600px
+            line-height: 1.4
+            color: $bl
+            position: relative
+            &::before
+                content: url('../img/dear/Vector.svg')
+                position: absolute
+                bottom: -60px
+.cour
+    padding: 50px 0 100px 0
+    background-image: url('../img/dear/bg-cour.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    &-title
+        text-align: center
+        font-size: 72px
+    &-subtitle
+        text-align: center
+        font-size: 36px
+        width: 100%
+        display: block
+        margin-bottom: 60px
+    &-card
+        &__title
+            padding: 30px 20px
+            border-radius: 20px
+            border: 1px solid $purp
+            text-align: center
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5))
+            background: #fff
+            margin-bottom: 20px
+            span
+                font-size: 24px
+        &__footer
+            text-align: center
+            font-size: 14px
+    &-footer
+        &__title
+            margin-top: 50px
+            font-family: Gil
+            font-size: 30px
+            text-align: center
+            margin-bottom: 30px
+        &__button
+            display: flex
+            justify-content: center
+            position: relative
+            &::after
+                content: 'Подарок при покупке от 6 месяцев'
+                position: absolute
+                bottom: 7%
+                right: 20%
+                max-width: 176px
+        &__btn
+            position: relative
+            background: $purp
+            color: #fff
+            border: 1px solid $pink
+            // filter: drop-shadow(inset 0 7px 7px #E75FA1)
+            box-shadow: (inset 0 7px 7px #E75FA1)
+            &::after
+                content: ''
+                position: absolute
+                width: 62px
+                height: 54px
+                background-image: url('../img/dear/подарок.png')
+                right: -30px
+                bottom: 5px
+.in
+    padding-top: 100px
+    background-image: url('../img/in/bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    &-title
+        text-align: center
+        font-size: 72px
+    &-subtitle
+        font-size: 36px
+        text-align: center
+        margin-bottom: 20px
+    &-text
+        font-size: 18px
+        text-align: center
+        margin-bottom: 50px
+        display: block
+    &-cards2
+        border: 1px solid #FFE0EF
+        border-radius: 50px
+        padding: 10px
+        margin-bottom: 50px
+        background: #fff
+    &-cards
+        background: #fff
+        padding: 10px
+        border: 1px solid #FFE0EF
+        border-radius: 40px
+    &-card
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 50px 80px
+        position: relative
+        &__img
+            margin-bottom: 20px
+        &__text
+            text-align: center
+        &__center
+            &::after, &::before
+                content: ''
+                position: absolute
+                width: 2px
+                height: 72px
+                background: $pink
+                top: 16%
+            &::after
+                right: 0
+            &::before
+                left: 0
+    &-footer
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+        &__title
+            font-family: Gil
+            font-size: 30px
+            margin-bottom: 30px
+            text-align: center
+        &__btn
+            background: $pink
+            border: 1px solid $purp
+            color: $purp
+        &__img
+            margin-top: 150px
+            margin-bottom: 100px
+.hap
+    background-image: url('../img/hap/bg.jpg')
+    background-repeat: no-repeat
+    // background-size: cover
+    background-position: center
+    padding-top: 50px
+    &-text
+        margin-bottom: 100px
+    &-title
+        font-size: 72px
+    &-subtitle
+        font-size: 36px
+    &-card
+        &__title
+            font-size: 48px
+            max-width: 830px
+            display: block
+            font-weight: bold
+            &1
+                font-size: 24px
+                margin-bottom: 20px
+                display: block
+                font-weight: bold
+        &__text
+            display: flex
+            align-items: center
+            color: #000
+        &__img
+            width: 458px
+            height: 291px
+            background: #fff
+            border: 1px solid $purp
+            border-radius: 20px
+            position: relative
+            img
+                position: absolute
+                left: -9%
+                top: -16%
+            &1
+                margin-bottom: 50px
+                img
+                    top: -34%
+                    left: -10%
+    &-footer
+        margin-top: 50px
+        margin-bottom: 100px
+        &__title
+            font-size: 24px
+            font-weight: bold
+            text-align: center
+            margin-top: 50px
+            display: block
+            margin-bottom: 50px
+            &1
+                font-size: 48px
+                text-align: center
+                margin-bottom: 5px
+        &__subtitle
+            font-size: 18px
+            text-align: center
+            color: #000
+            display: block
+            margin: auto
+            max-width: 500px
+            line-height: 1.4
+            padding-bottom: 50px
+        &__img
+            display: flex
+            align-items: center
+            justify-content: center
+        &__text
+            color: $purpD
+            font-size: 18px
+            font-weight: bold
+            text-align: center
+            padding: 0 30px 15px 30px
+        &__about
+            &__title
+                font-size: 14px
+                display: block
+                color: $purpD
+                font-weight: bold
+            &__text
+                font-size: 14px
+                color: #000
+        &__head
+            background: #fff
+            filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.15))
+            border-radius: 20px
+            margin-bottom: 15px
+            width: 100%
+            height: 239px
+        &__footer
+            width: 100%
+        &__btn
+            width: 100%
+            margin-top: 15px
+            background: #F6F6F6
+            color: #8C8C8C
+            border: none
+.use
+    padding-top: 100px
+    &-title
+        font-size: 48px
+        font-weight: bold
+        margin-bottom: 50px
+        display: block
+        line-height: 100%
+    &-footer
+        &__title
+            display: block
+            max-width: 650px
+            margin: auto
+            &1
+                margin-top: 50px
+                margin-bottom: 5px
+        &__subtitle
+            font-size: 18px
+            margin: auto
+            max-width: 600px
+            padding-bottom: 50px
+            color: #000
+    &-card
+        margin-bottom: 80px
+        &__img
+            height: 190px
+            img
+                top: -73%
+                left: -2%
+        &__img1
+            img
+                top: -51%
+    &-footer
+        &__btn
+            background: $pink
+            color: $purp
+            border: 1px solid $purpD
+            box-shadow: none
+.choi
+    &-card
+        margin-bottom: 50px
+    &-head
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            height: 96%
+            width: 97%
+            top: 0
+            left: 0
+            margin: 5px
+            border-radius: 20px
+    &-head1
+        &::after
+            border: 1px solid #3ED375
+    &-head2
+        &::after
+            border: 1px solid $purpD
+    &-head3
+        &::after
+            border: 1px solid #87B3E6
+    &-btn
+        &__active
+            border: 1px solid $purpD
+            color: $purpD
+            background: $pink
+.feat
+    background-image: url('../img/feat/bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    padding-bottom: 130px
+    &-img
+        margin-top: 100px
+        margin-bottom: 150px
+    &-card
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__text
+            text-align: center
+            span
+                color: #000
+        &__img
+            margin-bottom: 10px
+    &-title
+        font-size: 72px
+        text-align: center
+    &-subtitle
+        font-size: 36px
+        margin-bottom: 50px
+        text-align: center
+        display: block
+        width: 100%
+    &-text
+        &__title
+            font-size: 36px
+            font-family: Gil
+            margin-bottom: 10px
+            display: block
+            text-align: center
+            font-weight: bold
+        &__subtitle
+            width: 100%
+            display: block
+            margin-bottom: 100px
+            font-size: 24px
+            text-align: center
+    &-footer
+        margin-top: 100px
+        &__title
+            font-size: 24px
+            font-weight: bold
+            margin-bottom: 20px
+            text-align: center
+            width: 100%
+            display: block
+            color: $purpD
+        &__card
+            padding: 20px
+            background: #FDFFE0
+            border-radius: 20px
+            border: 1px solid $purpD
+            margin-bottom: 20px
+            &__title
+                font-weight: bold
+                font-size: 18px
+            &__text
+                font-size: 18px
+.cons
+    background-image: url('../img/cons/bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    &-title
+        font-size: 36px
+        font-weight: bold
+        color: $purpD
+        margin-bottom: 10px
+    &-subtitle
+        font-size: 24px
+        color: #000
+        padding-bottom: 60px
+        margin: auto
+        max-width: 610px
+    &-img
+            width: 100%
+            height: 100%
+            position: relative
+            img
+                position: absolute
+                top: -18%
+    &-card
+        display: flex
+        align-items: center
+        padding: 15px 10px
+        background: #fff
+        border: 1px solid $purpD
+        border-radius: 10px
+        margin-bottom: 20px
+        &__img
+            margin-right: 10px
+        span
+            color: #000
+        &__footer
+            span
+                font-size: 23px
+                font-weight: bold
+                color: $purpD
+.on
+    &-title
+        margin-top: 150px
+        h5
+            font-size: 36px
+            font-family: Gil
+            color: $purp
+            text-align: center
+            font-weight: bold
+    &-subtitle
+        span
+            display: block
+            margin-top: 10px
+            font-size: 24px
+            margin-bottom: 20px
+            color: #000
+            text-align: center
+    &-card
+        padding: 30px 40px
+        border: 1px solid #49A65D
+        border-radius: 20px
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1))
+        margin-bottom: 20px
+        background: #fff
+        &__item
+            margin-bottom: 10px
+            display: flex
+            align-items: center
+        &__img
+            margin-right: 10px
+        &__text
+            span
+                color: #000
+                font-size: 18px
+    &-footer
+        text-align: center
+        margin-bottom: 50px
+        span
+            font-size: 24px
+            font-weight: bold
+            color: $purpD
+.my
+    background-image: url('../img/my/bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    &-title
+        margin: 0
+    &-card
+        display: flex
+        align-items: center
+        padding: 20px
+        border-radius: 10px
+        border: 1px solid $purp
+        background: #fff
+        &__title
+            font-weight: bold
+        &__span
+            font-size: 14px
+        &__img
+            margin-right: 10px
+    &-footer
+        margin-top: 20px
+        margin-bottom: 100px
+        &__btn
+            background: $pink
+            border: 1px solid $purpD
+            color: $purpD
+            box-shadow: none
+.who
+    background-image: url('../img/who/bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    &-img
+        margin-top: 50px
+        margin-bottom: 150px
+    &-title
+        font-size: 72px
+    &-subtitle
+        font-size: 24px
+        font-family: An
+        width: 100%
+        display: block
+        text-align: end
+        margin-bottom: 60px
+    &-card
+        padding: 20px    
+        filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.15))
+        border-radius: 20px
+        border: 1px solid $purpD
+        background: #fff
+        height: 161px
+        margin-bottom: 30px
+        &__img
+            margin-bottom: 5px
+    &-list
+        margin-left: 20px
+    &-item
+        position: relative
+        margin-bottom: 15px
+        &::before
+            content: ''
+            position: absolute
+            width: 12px
+            height: 12px
+            background: $purpD
+            border-radius: 50%
+            top: 6px
+            left: -20px
+    &-slider
+        height: 200px
+        &__item   
+            width: 165px
+            height: 200px
+            border: 1px solid $purpD
+            border-radius: 20px
+            overflow: hidden
+            margin: 0 15px
+            img
+                width: 100%
+                height: 100%
+    &-img
+        &__img
+            position: relative
+            width: 100%
+            height: 100%
+            img
+                position: absolute
+                left: -45%
+                top: -40%
+    &-footer
+        margin-top: 40px
+        &__text
+            font-size: 18px
+            margin-bottom: 10px
+            display: block
+            margin-top: 40px
+        &__title
+            font-size: 18px
+            font-weight: bold
+            margin-bottom: 50px
+            &__title
+                font-size: 24px
+                font-weight: bold
+                text-align: center
+                display: block
+                width: 100%
+                margin-top: 50px
+                margin-bottom: 100px
+@media ( max-width: 992px )
+    .title
+        font-size: 48px
+    .subtitle
+        font-size: 24px
+    .ghost
+        display: none
+    .nav
+        &-content
+            flex-direction: column-reverse
+        &-left
+            width: 100%
+            display: flex
+            justify-content: center
+        &-right
+            width: 100%
+            display: flex
+            justify-content: flex-end
+        &-logo
+            width: 123px
+            height: 123px
+            img
+                width: 100%
+        &-text
+            display: none
+        &-tel
+            display: none
+        &-btn
+            display: none
+    .hero
+        background-image: url('../img/hero/mobbg.jpg')
+
+        padding-bottom: 122px
+        &-card
+            display: flex
+            &__img
+                margin-right: 20px
+        &-footer
+            &__btn
+                color: #fff
+                background: $purpD
+                margin-bottom: 20px
+                box-shadow: (inset 0 7px 7px #E75FA1)
+                &::after
+                    content: ''
+                    position: absolute
+                    background-image: url('../img/hero/mob.svg')
+                    width: 300px
+                    height: 22px
+                    bottom: -200%
+                    left: -6%
+    .dear
+        background-image: url('../img/dear/mobbg.jpg')
+        background-size: contain
+        &-title
+            text-align: center
+        &-subtitle
+            text-align: center
+    .cour
+        padding: 50px 0 30px 0
+        &-card
+            &__footer
+                margin-bottom: 20px
+        &-footer
+            &__title
+                font-size: 18px
+            &__btn
+                &::after
+                    bottom: -200%
+                    right: 38%
+            &__button
+                &::after
+                    bottom: -70%
+                    max-width: unset
+                    right: unset
+                    color: #891C7E
+    .in
+        &-title
+            text-align: left
+        &-subtitle
+            text-align: left
+        &-text
+            text-align: left
+        &-card
+            position: relative
+            padding: 20px 0
+            &__center
+                &::before, &::after
+                    width: 72px
+                    height: 2px
+                    position: absolute
+                    background: #FFE0EF
+                    top: unset
+                &::after
+                    bottom: 0
+                    right: 43%
+                &::before
+                    top: 0
+                    right: 43%
+                    left: unset
+        &-footer
+            &::after
+                background-image: url('../img/dear/mob.svg')
+                width: 200px
+                height: 50px
+                bottom: -200px
+                left: 31%
+            &__title
+                display: none
+            &__img
+                margin-bottom: 50px
+    .hap
+        &-title
+            font-size: 48px
+        &-subtitle
+            font-size: 22px
+        &-card
+            &__img
+                margin-top: 100px
+                margin-left: 20px
+    .use
+        &-title
+            font-size: 24px
+            margin-top: 30px
+        &-card
+            &__img
+                img
+                    // top: 15%
+            &__img1
+                img
+                    top: -56%
+    .hap
+        &-footer
+            margin-top: 0
+            &__title
+                margin-top: 0
+    .feat
+        padding-bottom: 100px
+        &-img
+            margin: 50px 0
+        &-card
+            margin-bottom: 60px
+        &-footer
+            margin-top: 0
+    .choi
+        &-img
+            img
+                top: -15%
+    .cons
+        &-subtitle
+            font-size: 22px
+        &-img
+            display: flex
+            justify-content: center
+            img
+                position: unset
+    .on
+        background-image: url('../img/cons/bgmob.jpg')
+        background-size: contain
+        &-title
+            margin-top: 50px
+    .my
+        &-card
+            margin-bottom: 20px
+    .who
+        &-card
+            height: auto
+            display: flex
+            flex-direction: column
+            align-items: center
+        &-footer
+            &__text
+                margin-top: 80px
+        &-img
+            &__img
+                img
+                    width: 100%
+                    height: 100%
+                    position: unset
